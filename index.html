@@ -1,0 +1,686 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Tuan Nguyen</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
+
+  
+    <style type="text/css">@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
+
+body {
+	background: #fff;
+	font-family: Lato, sans-serif;
+	font-weight: 300;
+	color: #333;
+	margin: 0 0 80px;
+	font-size: 15px;
+}
+
+a {
+	color: #E32B46;
+}
+
+a:focus, a:hover {
+	color: #333;
+	text-decoration: none;
+}
+
+strong {
+	font-size: smaller;
+	font-weight: 400;
+	color: #333;
+}
+
+p {
+	line-height: 1.5;
+	margin: 0 0 .5em 0;
+}
+
+p + p {
+	margin-top: 10px;
+}
+
+h1, h2, h3, h4 {
+	margin-top: 0;
+	font-weight: 300;
+	color: #555;
+}
+
+section {
+	margin-top: 24px;
+}
+
+ul, ol {
+	padding-left: 21px;
+}
+
+li {
+	line-height: 1.8;
+	list-style: none;
+}
+
+li:before {
+	content: "\f052";
+	float: left;
+	font: 16px Octicons;
+	margin-top: 6px;
+	margin-left: -20px;
+	opacity: .1;
+	position: absolute;
+}
+
+blockquote {
+  border-left: 3px solid #e7e9ec;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+em {
+	color: #666;
+	font-weight: 300;
+	font-style: normal;
+}
+
+h4 span:first-child {
+	color: #333;
+	font-weight: 400;
+}
+
+.container {
+	max-width: 750px;
+	padding: 0 30px;
+}
+
+.col-sm-6 {
+	margin-bottom: 10px;
+}
+
+.col-sm-12 h4 {
+	margin-top: 12px;
+}
+
+.col-sm-12 + .col-sm-12 {
+	margin-top: 30px;
+}
+
+#header {
+	padding: 50px 0 25px;
+}
+
+#header h2 {
+	color: #95a5a6;
+	font-size: 24px;
+}
+
+#content h3 {
+	color: #555;
+	font-size: 26px;
+	margin-top: -4px;
+}
+
+#content aside {
+	text-align: right;
+	padding-right: 30px;
+}
+
+#profiles .network {
+	text-transform: capitalize;
+}
+
+#work .position,
+#volunteer .position {
+	font-weight: 400;
+	margin-bottom: 8px;
+}
+
+#education .area {
+	font-weight: 400;
+}
+
+#education .area:before {
+	content: "\f0d7";
+	font: 16px Octicons;
+	margin-right: 6px;
+}
+
+#education .studyType {
+	margin-left: 25px;
+}
+
+#awards .summary,
+#publications .summary {
+	margin-top: 8px;
+}
+
+#publications .website a:before {
+	content: attr(href);
+}
+
+@media (min-width: 480px) {
+	.strike-through {
+		border-top: 1px solid #f4f6f6;
+		height: 20px;
+		margin-top: 12px;
+		margin-bottom: -2px;
+		position: relative;
+  }
+
+	.strike-through span,
+	.strike-through a {
+		background: #fff;
+		position: absolute;
+  }
+
+	.strike-through span:first-child {
+		padding-right: 20px;
+		margin-top: -12px;
+  }
+
+	.strike-through span + span {
+		font-size: 14px;
+		margin-top: -10px;
+		padding-left: 20px;
+		right: 0;
+	}
+}
+
+@media (max-width: 768px) {
+	.col-sm-6:last-child {
+		margin-bottom: 0px;
+  }
+
+	#content aside {
+		margin-bottom: 20px;
+		padding-right: 0;
+		text-align: left;
+  }
+
+	#publications .website a:before {
+		content: "View publication";
+	}
+}
+
+@media (max-width: 480px) {
+	h1 {
+		font-size: 28px;
+  }
+
+	#header h2 {
+		font-size: 24px;
+  }
+
+	#content h3 {
+		font-size: 20px;
+  }
+
+	h4 {
+		font-size: 16px;
+  }
+
+	.date {
+		font-size: 14px;
+		margin-bottom: 5px;
+  }
+
+	.strike-through span:first-child {
+		margin-bottom: 7px;
+  }
+
+	.strike-through span {
+		display: block;
+  }
+
+	#header {
+		padding: 30px 0 0;
+  }
+
+	#actions {
+		display: none;
+	}
+}
+
+@media print {
+	body {
+		font-size: 12px;
+  }
+
+	a[href]:after {
+		display: none;
+  }
+
+	h1 {
+		font-size: 24px;
+  }
+
+	#header h2 {
+		font-size: 18px;
+		margin-top: -8px;
+  }
+
+	h4 {
+		font-size: 13px;
+  }
+
+  #header {
+		padding: 0;
+	}
+
+	#content aside {
+		margin: 0 !important;
+	}
+
+	#content h3 {
+		font-size: 16px;
+		margin-top: 0;
+	}
+
+	blockquote {
+		border: 0;
+		border-left: 3px solid #e7e9ec;
+		font-size: 12px;
+	}
+
+	li:before {
+		font: 10px Octicons;
+	}
+
+	.strike-through {
+		border-top-color: transparent;
+  }
+
+	.strike-through span + span {
+		font-size: 12px;
+  }
+
+	.col-sm-push-3 {
+    left: 25%;
+  }
+
+	.col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+    float: left;
+  }
+
+	.col-sm-12 {
+	  width: 100%;
+  }
+
+	.col-sm-11 {
+	  width: 91.66666666666666%;
+  }
+
+	.col-sm-10 {
+	  width: 83.33333333333334%;
+  }
+
+	.col-sm-9 {
+	  width: 75%;
+  }
+
+	.col-sm-8 {
+	  width: 66.66666666666666%;
+  }
+
+	.col-sm-7 {
+	  width: 58.333333333333336%;
+  }
+
+	.col-sm-6 {
+	  width: 50%;
+  }
+
+	.col-sm-5 {
+	  width: 41.66666666666667%;
+  }
+
+	.col-sm-4 {
+	  width: 33.33333333333333%;
+  }
+
+	.col-sm-3 {
+	  width: 25%;
+  }
+
+	.col-sm-2 {
+	  width: 16.666666666666664%;
+  }
+
+	.col-sm-1 {
+	  width: 8.333333333333332%;
+  }
+}
+</style>
+  
+</head>
+<body>
+  <!-- HEADER -->
+  <header id="header">
+		<div class="container">
+			<div class="row">
+        <div class="col-sm-3">
+          <img src="profile.jpg" class="img-responsive img-circle pull-right" style="max-height: 88px">
+        </div>
+				<div class="col-sm-9">
+          <h1>Tuan Nguyen</h1>
+          <h2>Software Engineer, Backend Development</h2>
+				</div>
+			</div>
+		</div>
+	</header>
+
+  <!-- CONTENT: Re-arrange sections order if necessary -->
+  <div id="content" class="container">
+    <!-- Contact -->
+    
+
+
+  <section id="contact" class="row">
+    <aside class="col-sm-3"><h3>Contact</h3></aside>
+    <div class="col-sm-9">
+      <div class="row">
+        <div class="col-sm-6">
+          <strong>Email</strong>
+          <div>
+            <a target="_blank" href="mailto:nmtuan.dev@gmail.com">nmtuan.dev@gmail.com</a>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <strong>Phone</strong>
+          <div class="phone">(+84) 0934-018-329</div>
+        </div>
+        <div class="col-sm-6">
+          <strong>Website</strong>
+          <div>
+            <a target="_blank" href="https://nmtuan.space">https://nmtuan.space</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+    <!-- About -->
+    
+
+
+  <section id="about" class="row">
+    <aside class="col-sm-3">
+      <h3>About</h3>
+    </aside>
+    <div class="col-sm-9">
+      <p>I&#39;m a software engineer working mainly in the backend side of the spectrum. I enjoy learning and sharing new technologies. My current focus is on NodeJs and Golang development. I spend a lot of my free time contributing to the open source community. Checkout my GitHub and StackOverflow.</p>
+    </div>
+  </section>
+
+
+    <!-- Profiles -->
+    
+
+
+  <section id="profiles" class="row">
+    <aside class="col-sm-3">
+      <h3>Profiles</h3>
+    </aside>
+    <div class="col-sm-9">
+      <div class="row">
+        
+          <div class="col-sm-6">
+            <strong class="network">GitHub</strong>
+            <div class="url">
+              <a target="_blank" href="https://github.com/rocketspacer">rocketspacer</a>
+            </div>
+          </div>
+        
+          <div class="col-sm-6">
+            <strong class="network">StackOverflow</strong>
+            <div class="url">
+              <a target="_blank" href="https://stackoverflow.com/users/4318281/rocketspacer">rocketspacer</a>
+            </div>
+          </div>
+        
+          <div class="col-sm-6">
+            <strong class="network">LinkedIn</strong>
+            <div class="url">
+              <a target="_blank" href="https://www.linkedin.com/in/mntuan">Tuan Nguyen</a>
+            </div>
+          </div>
+        
+          <div class="col-sm-6">
+            <strong class="network">Facebook</strong>
+            <div class="url">
+              <a target="_blank" href="https://www.facebook.com/rocketspacer">Tuan Nguyen</a>
+            </div>
+          </div>
+        
+      </div>
+    </div>
+  </section>
+
+
+    <!-- Work -->
+    
+
+
+  <section id="work" class="row">
+    <aside class="col-sm-3">
+      <h3>Work</h3>
+    </aside>
+    <div class="col-sm-9">
+      <div class="row">
+        
+          <div class="col-sm-12">
+            <h4 class="strike-through">
+              <span>Misfit Wearables</span>
+              <span class="date">
+                September 2017 — Now
+              </span>
+            </h4>
+            <div class="website pull-right">
+              <a target="_blank" href="https://misfit.com">https://misfit.com</a>
+            </div>
+            <div class="position">
+              Software Engineer 2, Backend Development
+            </div>
+            <div class="summary">
+              <p>Misfit is a fast growing startup focused on wearable technologies, currently acquired by Fossil Group</p>
+            </div>
+            
+              <p><strong>Highlights</strong></p>
+              <ul class="highlights">
+                
+                  <li class="bullet">Building high availability, scalable core APIs architectured as microservices</li>
+                
+                  <li class="bullet">Help re-design and re-build new authentication/authorization system</li>
+                
+                  <li class="bullet">Upgrade and rewrite Open APIs for third-party developers complied with the OAuth2 specs</li>
+                
+                  <li class="bullet">Building the data ingestion endpoint for a near real-time reporting system</li>
+                
+                  <li class="bullet">Help migrate our old deployment system (Chefs + EC2) to Kubernetes</li>
+                
+                  <li class="bullet">Lots of internal tools supporting our Developers, PMs and Customer Services team</li>
+                
+              </ul>
+            
+          </div>
+        
+      </div>
+    </div>
+  </section>
+
+
+    <!-- Skills -->
+    
+
+
+  <section id="skills" class="row">
+    <aside class="col-sm-3">
+      <h3>Skills</h3>
+    </aside>
+    <div class="col-sm-9">
+      <div class="row">
+        
+          <div class="col-sm-6">
+            <div class="name">
+              <h4>Frontend Development</h4>
+            </div>
+            
+              <ul class="keywords">
+                
+                  <li>HTML/CSS/Javascript</li>
+                
+                  <li>Boostrap</li>
+                
+                  <li>Babel</li>
+                
+                  <li>React/Redux</li>
+                
+                  <li>Webpack</li>
+                
+              </ul>
+            
+          </div>
+        
+          <div class="col-sm-6">
+            <div class="name">
+              <h4>Backend Development</h4>
+            </div>
+            
+              <ul class="keywords">
+                
+                  <li>NodeJS</li>
+                
+                  <li>Golang</li>
+                
+                  <li>MongoDB</li>
+                
+                  <li>Postgres</li>
+                
+                  <li>Redis</li>
+                
+              </ul>
+            
+          </div>
+        
+          <div class="col-sm-6">
+            <div class="name">
+              <h4>System Administration</h4>
+            </div>
+            
+              <ul class="keywords">
+                
+                  <li>AWS</li>
+                
+                  <li>Linux</li>
+                
+                  <li>NGINX</li>
+                
+                  <li>CloudFlare</li>
+                
+                  <li>Shell</li>
+                
+                  <li>Docker</li>
+                
+              </ul>
+            
+          </div>
+        
+      </div>
+    </div>
+  </section>
+
+
+    <!-- Education -->
+    
+
+
+  <section id="education" class="row">
+    <aside class="col-sm-3">
+      <h3>Education</h3>
+    </aside>
+    <div class="col-sm-9">
+      <div class="row">
+        
+          <div class="col-sm-12">
+            <h4 class="strike-through">
+              <span>Ho Chi Minh University of Science</span>
+              <span class="date">
+                September 2011 — July 2015
+              </span>
+            </h4>
+            <div class="area">Software Engineering</div>
+            <div class="studyType">
+              Bachelor
+              
+                (8.0 / 10)
+              
+            </div>
+            
+          </div>
+        
+      </div>
+    </div>
+  </section>
+
+
+    <!-- Awards -->
+    
+
+
+
+
+    <!-- Volunteer -->
+    
+
+
+
+    <!-- Publications -->
+    
+
+
+
+    <!-- Languages -->
+    
+
+
+  <section id="languages" class="row">
+    <aside class="col-sm-3">
+      <h3>Languages</h3>
+    </aside>
+    <div class="col-sm-9">
+      <div class="row">
+        
+          <div class="col-sm-6">
+            <div class="language"><strong>Vietnamese</strong></div>
+            <div class="fluency">Native speaker</div>
+          </div>
+        
+          <div class="col-sm-6">
+            <div class="language"><strong>English</strong></div>
+            <div class="fluency">Proficient</div>
+          </div>
+        
+      </div>
+    </div>
+  </section>
+
+
+    <!-- Interests -->
+    
+
+
+
+    <!-- References -->
+    
+
+
+
+  </div>
+</body>
+</html>
